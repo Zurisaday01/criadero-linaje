@@ -1,0 +1,53 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 1rem;
+	}
+
+	&__paragraph {
+		width: 50rem;
+	}
+	&__img {
+		flex: 0 0 50%;
+		position: relative;
+	}
+
+	&__imagen {
+		width: 50rem;
+		z-index: 10;
+		transform: translate(15rem, -2rem);
+	}
+}
+
+.section-about {
+	background-color: blueviolet;
+}
+.section-information {
+	background-color: crimson;
+}
+.section-puppies {
+	background-color: darkgreen;
+}
+.section-review {
+	background-color: darkkhaki;
+}
+.section-contact {
+	background-color: royalblue;
+}
+
+.bg {
+	width: 90rem;
+	height: 85rem;
+	background-color: color(primary, a);
+	clip-path: circle(50% at 50% 50%);
+	position: absolute;
+	right: 0;
+	transform: translate(13.3rem, -13rem);
+	z-index: -1;
+}

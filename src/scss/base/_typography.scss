@@ -1,0 +1,11 @@
+.heading {
+	@include font-family(heading);
+	color: color(neutral, a);
+	&--primary {
+		@include font-size(alfa);
+	}
+}
+
+.paragraph {
+	line-height: 1.7;
+}

@@ -1,0 +1,25 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	@include font-family(body);
+	@include font-size(gamma);
+	background-color: color(neutral, c);
+	color: color(neutral, b);
+	position: relative;
+	overflow-x: hidden;
+}
+
+.container-grid {
+	max-width: 90vw;
+	margin: 0 auto;
+	display: grid;
+	grid-column: 100%;
+	grid-template-rows: calc(100vh - 7rem);
+}
+
+::selection {
+	background-color: color(primary, b);
+	color: color(neutral, c);
+}

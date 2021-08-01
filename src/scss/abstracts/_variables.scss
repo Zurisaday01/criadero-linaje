@@ -1,0 +1,35 @@
+// -------- Colors ------------
+
+$color: (
+	primary: (
+		a: #00a8cc,
+		b: #25d7ff,
+	),
+	neutral: (
+		a: #272727,
+		b: #aaaaaa,
+		c: #fcfcfc,
+	),
+);
+
+// ------- Typography -----------
+$font__family: (
+	heading: (
+		'Bebas Neue',
+		cursive,
+	),
+	body: (
+		'Open Sans',
+		sans-serif,
+	),
+);
+
+// ------- Font Size -----------
+$font__size: (
+	alfa: 7rem,
+	beta: 2rem,
+	gamma: 1.7rem,
+);
+
+// -------- heigh header --------
+$header-heigh: 7rem;

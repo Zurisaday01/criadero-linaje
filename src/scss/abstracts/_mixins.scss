@@ -1,0 +1,9 @@
+// ------------- genera font family -----------------
+@mixin font-family($el) {
+	font-family: get-font-family($el);
+}
+
+// ------------- genera font size -----------------
+@mixin font-size($el) {
+	font-size: get-font-size($el);
+}

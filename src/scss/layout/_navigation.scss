@@ -1,0 +1,40 @@
+.navigation {
+	&__menu {
+		position: relative;
+	}
+
+	&__list {
+		display: flex;
+		list-style: none;
+		column-gap: 3rem;
+	}
+
+	&__item {
+		@include font-family(heading);
+		@include font-size(beta);
+	}
+
+	&__link {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: color(neutral, a);
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			color: color(primary, a);
+		}
+	}
+
+	&__toggle {
+		display: none;
+		font-size: 3.5rem;
+		position: absolute;
+		right: 5vw;
+		top: 1.5rem;
+		color: color(neutral, a);
+		padding: 5px;
+		cursor: pointer;
+	}
+}

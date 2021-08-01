@@ -1,0 +1,19 @@
+.btn {
+	&:link,
+	&:visited {
+		@include font-size(beta);
+		@include font-family(heading);
+		letter-spacing: 1px;
+		text-decoration: none;
+		background-color: color(neutral, c);
+		border: 2px solid color(primary, a);
+		padding: 1rem 4rem;
+		border-radius: 10rem;
+		color: color(primary, a);
+		transition: all 0.4s;
+	}
+	&:hover {
+		background-color: color(primary, a);
+		color: color(neutral, c);
+	}
+}

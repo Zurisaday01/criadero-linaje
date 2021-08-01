@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+$breakpoints: (
+  'small': ( max-width: 34.375em ), //550px
+  
+) !default;
+
+@mixin respond($bp) {
+
+  $value: map-get($breakpoints, $bp);
+
+  @if $value != null {
+    @media only screen and #{inspect(map-get($breakpoints, $bp))} { @content };
+  }
+
+  @else {
+    @warn "Desafortunadamente, la clave no se encuentra en el mapa`#{$breakpoints}`. "
+        + "Por favor asegurese de que la clave se encuentre en el mapa `$breakpoints`";
+  }
+}
+
