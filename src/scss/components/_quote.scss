@@ -1,0 +1,37 @@
+.quote {
+	background-color: color(neutral, a);
+	display: flex;
+	width: 69rem;
+	border-radius: 8px;
+	gap: 3rem;
+	padding: 2rem 4rem;
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&__box-img {
+		width: 21rem;
+		height: 10rem;
+		border-radius: 10rem;
+		overflow: hidden;
+	}
+
+	&__text {
+		color: color(neutral, c);
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		@include font-size(delta);
+	}
+
+	&__author {
+		font-style: italic;
+		font-weight: 300;
+		position: absolute;
+		bottom: 1rem;
+		right: 5rem;
+	}
+}

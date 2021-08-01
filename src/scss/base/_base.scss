@@ -12,11 +12,15 @@ body {
 }
 
 .container-grid {
+	// Para que no desacomode los elementos el header fixed -----------------
+	padding-top: $header-heigh;
+	// ---------------------------
 	max-width: 90vw;
 	margin: 0 auto;
 	display: grid;
 	grid-column: 100%;
 	grid-template-rows: calc(100vh - 7rem);
+	row-gap: 10rem;
 }
 
 ::selection {

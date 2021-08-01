@@ -4,6 +4,9 @@
 	&--primary {
 		@include font-size(alfa);
 	}
+	&--secondary {
+		@include font-size(alga-1);
+	}
 }
 
 .paragraph {
