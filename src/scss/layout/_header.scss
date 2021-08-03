@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0rem 5vw;
-	box-shadow: 0 0 2rem rgba(color(neutral, a), 0.3);
+	box-shadow: $shadow;
 	z-index: 100000;
 	background-color: color(neutral, c);
 	position: fixed;

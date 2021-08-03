@@ -1,0 +1,101 @@
+.puppies-options {
+	margin-top: 5rem;
+	&__select {
+		margin-bottom: 6rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__descrip {
+		color: color(primary, a);
+		margin-left: -9vw;
+		font-size: 1.2rem;
+	}
+
+	&__menu-options {
+		text-transform: uppercase;
+		appearance: none;
+		outline: 0;
+		width: 20vw;
+		border: 1px solid color(neutral, b);
+		background: color(neutral, c);
+		background-image: none;
+		flex: 1;
+		padding: 0 0.5em;
+		color: color(neutral, b);
+		cursor: pointer;
+		font-size: inherit;
+		font-family: inherit;
+		padding: 1rem 2rem;
+		border-radius: 10rem;
+		position: relative;
+	}
+
+	&__main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		row-gap: 5rem;
+	}
+
+	&__puppy {
+		position: relative;
+		&-box {
+			width: 30rem;
+			height: 35rem;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: $shadow;
+
+			&:hover {
+				cursor: pointer;
+				transition: all 0.35s;
+			}
+		}
+
+		&-box:hover + &-info {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		&-img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			transition: all 0.3s ease;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+
+		&-info {
+			position: absolute;
+			bottom: 0;
+			height: 45%;
+			width: 100%;
+			background-color: rgba(color(neutral, c), 0.7);
+			padding: 3rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&__paragraph {
+		font-weight: 600;
+		span {
+			color: color(neutral, a);
+		}
+
+		&--male {
+			color: color(primary, a);
+		}
+		&--female {
+			color: #af0057;
+		}
+	}
+}

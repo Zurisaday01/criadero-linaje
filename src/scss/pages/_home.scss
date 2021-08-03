@@ -69,7 +69,7 @@
 
 	&__contain {
 		width: 50vw;
-		box-shadow: 0 0 2rem rgba(color(neutral, a), 0.3);
+		box-shadow: $shadow;
 		border-radius: 8px;
 		overflow: hidden;
 	}
@@ -84,7 +84,6 @@
 	}
 }
 .section-puppies {
-	background-color: darkgreen;
 }
 .section-review {
 	background-color: darkkhaki;
@@ -103,4 +102,5 @@
 	right: 0;
 	transform: translate(13rem, -9rem);
 	z-index: -1;
+	// display: none;
 }
