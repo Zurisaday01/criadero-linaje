@@ -32,11 +32,13 @@
 		display: block;
 		background-color: color(primary, a);
 		padding: 7rem 12rem;
+		height: 20rem;
 		width: calc(90vw / 2 - 9px);
 		text-align: center;
 		border-radius: 8px;
 		box-shadow: $shadow;
 		position: relative;
+		line-height: 1.15;
 		&::after {
 			content: '"';
 			width: auto;

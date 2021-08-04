@@ -1,0 +1,32 @@
+.footer {
+	background-color: color(primary, a);
+	height: 25vh;
+	color: color(neutral, c);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr min-content;
+	margin-top: 10rem;
+	align-items: center;
+	padding: 1.5rem 5vw;
+
+	&__box-logo {
+		grid-row: 1 / -1;
+		grid-column: 2 / 3;
+		justify-self: end;
+	}
+
+	&__img {
+		height: 4rem;
+	}
+
+	&__fare {
+		@include font-family(heading);
+		font-size: 3rem;
+	}
+
+	&__copy {
+		@include font-size(delta);
+		justify-self: center;
+		grid-column: 1 / -1;
+	}
+}
