@@ -1,6 +1,9 @@
 .navigation {
 	&__menu {
 		position: relative;
+		@include respond(centeno) {
+			display: none;
+		}
 	}
 
 	&__list {
@@ -36,5 +39,9 @@
 		color: color(neutral, a);
 		padding: 5px;
 		cursor: pointer;
+
+		@include respond(centeno) {
+			display: block;
+		}
 	}
 }

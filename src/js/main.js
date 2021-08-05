@@ -185,8 +185,8 @@ const swiper = new Swiper('.swiper-container', {
 		// 	870: {
 		// 		slidesPerView: 2,
 		// 	},
-		1400: {
-			slidesPerView: 3,
-		},
+		// 1400: {
+		// 	slidesPerView: 3,
+		// },
 	},
 });
