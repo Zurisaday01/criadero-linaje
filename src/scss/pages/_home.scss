@@ -44,8 +44,16 @@
 			width: 40rem;
 		}
 		@include respond(centeno) {
-			width: 27rem;
-			top: -5rem;
+			width: 25rem;
+			top: -6rem;
+		}
+		@include respond(trigo) {
+			width: 19rem;
+			top: 1.5rem;
+		}
+		@include respond(arroz) {
+			width: 19rem;
+			top: 3.5rem;
 		}
 	}
 }
@@ -55,6 +63,18 @@
 	column-gap: 13%;
 	position: relative;
 	padding: 5rem 0rem;
+
+	@include respond(avena) {
+		column-gap: 0%;
+		justify-content: space-between;
+	}
+	@include respond(centeno) {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	@include respond(sorgo) {
+		row-gap: 2rem;
+	}
 	&__img {
 		flex: 0 0 30vw;
 		height: 35vw;
@@ -63,12 +83,23 @@
 		background-repeat: no-repeat;
 		background-size: 130%;
 		border-radius: 8px;
+		@include respond(centeno) {
+			flex: 0 0 40vw;
+			width: 38vw;
+			align-self: center;
+		}
 	}
 
 	&__quote {
 		position: absolute;
 		bottom: -7rem;
 		left: 20rem;
+		@include respond(centeno) {
+			left: 15rem;
+		}
+		@include respond(sorgo) {
+			left: 0;
+		}
 	}
 
 	&__text {
@@ -78,6 +109,10 @@
 		justify-content: center;
 		align-content: center;
 		margin-top: -6rem;
+		@include respond(avena) {
+			flex: 0 0 60%;
+		}
+
 		&--p {
 			margin-top: 2rem;
 			display: flex;
@@ -98,6 +133,12 @@
 		box-shadow: $shadow;
 		border-radius: 8px;
 		overflow: hidden;
+		@include respond(avena) {
+			width: 80vw;
+		}
+		@include respond(sorgo) {
+			width: 90vw;
+		}
 	}
 
 	&__title {
@@ -206,7 +247,7 @@
 	position: absolute;
 	right: 0;
 	transform: translate(13rem, -9rem);
-	z-index: -1;
+	z-index: -10;
 	// display: none;
 	@include respond(kasha) {
 		transform: translate(15rem, -10rem);
@@ -226,5 +267,17 @@
 		height: 40rem;
 		transform: translate(5rem, 0rem);
 		top: 47rem;
+	}
+	@include respond(trigo) {
+		width: 30rem;
+		height: 30rem;
+		transform: translate(5rem, 0rem);
+		top: 55rem;
+	}
+	@include respond(arroz) {
+		width: 28rem;
+		height: 28rem;
+		transform: translate(2rem, 0rem);
+		top: 60rem;
 	}
 }

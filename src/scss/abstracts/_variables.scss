@@ -26,7 +26,7 @@ $font__family: (
 
 // ------- Font Size -----------
 $font__size: (
-	alfa: 7rem,
+	alfa: clamp(6rem, 8vw, 7rem),
 	alga-1: 5rem,
 	beta: 2rem,
 	gamma: 1.7rem,

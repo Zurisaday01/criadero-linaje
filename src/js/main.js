@@ -190,3 +190,24 @@ const swiper = new Swiper('.swiper-container', {
 		// },
 	},
 });
+
+// NAVIGATION
+const showMenu = (toggleId, navId) => {
+	const toggle = document.getElementById(toggleId),
+		nav = document.getElementById(navId);
+	if (toggle && nav) {
+		toggle.addEventListener('click', () => {
+			toggle.classList.toggle('toggle-close');
+			nav.classList.toggle('show');
+			document.querySelector('.navigation__list').classList.toggle('active');
+
+			setTimeout(() => {
+				document
+					.querySelector('.navigation__list')
+					.classList.toggle('transition');
+			}, 1000);
+		});
+	}
+};
+
+showMenu('nav-toggle', 'nav-menu');

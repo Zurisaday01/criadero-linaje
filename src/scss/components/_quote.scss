@@ -5,6 +5,13 @@
 	border-radius: 8px;
 	gap: 3rem;
 	padding: 2rem 4rem;
+
+	@include respond(centeno) {
+		width: 65vw;
+	}
+	@include respond(sorgo) {
+		width: 90vw;
+	}
 	&__img {
 		object-fit: cover;
 		width: 100%;

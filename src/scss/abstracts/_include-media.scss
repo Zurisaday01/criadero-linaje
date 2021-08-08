@@ -15,11 +15,34 @@ $breakpoints: (
 			max-width: 81.25em,
 		),
 	//1300
+	'avena':
+		(
+			max-width: 79.375em,
+		),
+	//1270
 	'centeno':
 		(
 			max-width: 68.125em,
 		),
 	//1090
+	'sorgo':
+		(
+			max-width: 58.125em,
+		),
+	//930
+	'trigo':
+		(
+			max-width: 49.375em,
+		),
+	'arroz': (
+		max-width: 42.1875em,
+	),
+	//675
+	'alpiste':
+		(
+			max-width: 41.625em,
+		),
+	//666
 ) !default;
 
 @mixin respond($bp) {

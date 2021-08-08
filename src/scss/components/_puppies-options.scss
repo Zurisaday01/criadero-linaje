@@ -39,6 +39,9 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		row-gap: 5rem;
+		@include respond(arroz) {
+			justify-content: center;
+		}
 	}
 
 	&__puppy {
@@ -49,6 +52,13 @@
 			border-radius: 8px;
 			overflow: hidden;
 			box-shadow: $shadow;
+
+			@include respond(trigo) {
+				margin-left: 1rem;
+			}
+			@include respond(alpiste) {
+				margin-left: 0rem;
+			}
 
 			&:hover {
 				cursor: pointer;
