@@ -34,15 +34,22 @@ $breakpoints: (
 		(
 			max-width: 49.375em,
 		),
-	'arroz': (
-		max-width: 42.1875em,
-	),
+	// 790
+	'arroz':
+		(
+			max-width: 42.1875em,
+		),
 	//675
 	'alpiste':
 		(
 			max-width: 41.625em,
 		),
 	//666
+	'espelta':
+		(
+			max-width: 30em,
+		),
+	//480
 ) !default;
 
 @mixin respond($bp) {

@@ -75,6 +75,9 @@
 	@include respond(sorgo) {
 		row-gap: 2rem;
 	}
+	@include respond(arroz) {
+		margin-bottom: 15rem;
+	}
 	&__img {
 		flex: 0 0 30vw;
 		height: 35vw;
@@ -88,6 +91,14 @@
 			width: 38vw;
 			align-self: center;
 		}
+		@include respond(sorgo) {
+			width: 60vw;
+			flex: 0 0 60vw;
+		}
+		@include respond(arroz) {
+			width: 70vw;
+			flex: 0 0 70vw;
+		}
 	}
 
 	&__quote {
@@ -99,6 +110,9 @@
 		}
 		@include respond(sorgo) {
 			left: 0;
+		}
+		@include respond(arroz) {
+			bottom: -20rem;
 		}
 	}
 
@@ -161,6 +175,10 @@
 	&__main {
 		display: flex;
 		margin-top: 8rem;
+		@include respond(centeno) {
+			flex-direction: column;
+			gap: 5rem;
+		}
 	}
 	&__map {
 		flex: 0 0 60rem;
@@ -168,6 +186,9 @@
 		border: none;
 		border-radius: 5px;
 		box-shadow: $shadow;
+		@include respond(centeno) {
+			gap: 5rem;
+		}
 	}
 	&__info {
 		flex: 1;

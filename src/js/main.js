@@ -179,15 +179,12 @@ const swiper = new Swiper('.swiper-container', {
 	spaceBetween: 90,
 	loop: true,
 	breakpoints: {
-		// 	300: {
-		// 		slidesPerView: 1,
-		// 	},
-		// 	870: {
-		// 		slidesPerView: 2,
-		// 	},
-		// 1400: {
-		// 	slidesPerView: 3,
-		// },
+		200: {
+			slidesPerView: 1,
+		},
+		1090: {
+			slidesPerView: 2,
+		},
 	},
 });
 

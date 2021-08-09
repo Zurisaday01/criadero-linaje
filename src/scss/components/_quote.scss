@@ -12,6 +12,13 @@
 	@include respond(sorgo) {
 		width: 90vw;
 	}
+	@include respond(arroz) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 4rem;
+		gap: 2rem;
+	}
 	&__img {
 		object-fit: cover;
 		width: 100%;
@@ -20,8 +27,12 @@
 	&__box-img {
 		width: 21rem;
 		height: 10rem;
-		border-radius: 10rem;
+		border-radius: 40rem;
 		overflow: hidden;
+		@include respond(arroz) {
+			width: 10rem;
+			height: 10rem;
+		}
 	}
 
 	&__text {

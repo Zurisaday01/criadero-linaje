@@ -39,6 +39,28 @@
 		box-shadow: $shadow;
 		position: relative;
 		line-height: 1.15;
+
+		@include respond(quinoa) {
+			padding: 6rem 10rem;
+		}
+		@include respond(centeno) {
+			padding: 7rem 12rem;
+			width: 90vw;
+		}
+		@include respond(arroz) {
+			height: 30rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0rem 10rem;
+		}
+		@include respond(espelta) {
+			height: 30rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0rem 7rem;
+		}
 		&::after {
 			content: '"';
 			width: auto;

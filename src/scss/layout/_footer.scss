@@ -9,10 +9,24 @@
 	align-items: center;
 	padding: 1.5rem 5vw;
 
+	@include respond(centeno) {
+		grid-template-columns: 100%;
+		grid-template-rows: min-content 1fr min-content;
+		justify-items: center;
+		padding: 6rem 5vw 1.5rem 5vw;
+		gap: 4rem;
+		height: 30rem;
+	}
+
 	&__box-logo {
 		grid-row: 1 / -1;
 		grid-column: 2 / 3;
 		justify-self: end;
+		@include respond(centeno) {
+			grid-row: 1 / 2;
+			grid-column: 1 / -1;
+			justify-self: center;
+		}
 	}
 
 	&__img {
@@ -22,6 +36,10 @@
 	&__fare {
 		@include font-family(heading);
 		font-size: 3rem;
+		@include respond(centeno) {
+			grid-row: 2 / 3;
+			grid-column: 1 / -1;
+		}
 	}
 
 	&__copy {
