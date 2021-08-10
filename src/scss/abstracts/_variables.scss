@@ -26,11 +26,11 @@ $font__family: (
 
 // ------- Font Size -----------
 $font__size: (
-	alfa: clamp(6rem, 8vw, 7rem),
-	alga-1: 5rem,
+	alfa: clamp(5rem, 8vw, 7rem),
+	alga-1: clamp(3rem, 8vw, 5rem),
 	beta: 2rem,
 	gamma: 1.7rem,
-	delta: 1.5rem,
+	delta: clamp(9px, 8vw, 1.5rem),
 );
 
 // -------- heigh header --------

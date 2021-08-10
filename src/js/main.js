@@ -187,24 +187,43 @@ const swiper = new Swiper('.swiper-container', {
 		},
 	},
 });
+// NAVIGATION -------------------------------------
 
-// NAVIGATION
-const showMenu = (toggleId, navId) => {
-	const toggle = document.getElementById(toggleId),
-		nav = document.getElementById(navId);
+// ELEMENTS
+const linkEls = Array.from(document.querySelectorAll('.navigation__link'));
+const listEl = document.querySelector('.navigation__list');
+const toggle = document.getElementById('nav-toggle');
+const nav = document.getElementById('nav-menu');
+
+// STATE VARAIBLE
+let active = false;
+
+const menu = function () {
+	toggle.classList.toggle('toggle-close');
+	nav.classList.toggle('show');
+	listEl.classList.toggle('active');
+
+	active
+		? listEl.classList.add('transition')
+		: listEl.classList.remove('transition');
+
+	active = !active;
+};
+
+const showMenu = () => {
 	if (toggle && nav) {
 		toggle.addEventListener('click', () => {
-			toggle.classList.toggle('toggle-close');
-			nav.classList.toggle('show');
-			document.querySelector('.navigation__list').classList.toggle('active');
-
-			setTimeout(() => {
-				document
-					.querySelector('.navigation__list')
-					.classList.toggle('transition');
-			}, 1000);
+			menu();
 		});
 	}
 };
+showMenu();
 
-showMenu('nav-toggle', 'nav-menu');
+const closeMenu = links => {
+	links.forEach(link => {
+		link.addEventListener('click', function () {
+			menu();
+		});
+	});
+};
+closeMenu(linkEls);

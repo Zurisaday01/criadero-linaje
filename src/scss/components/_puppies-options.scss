@@ -10,9 +10,16 @@
 
 	&__descrip {
 		color: color(primary, a);
-		margin-left: -9vw;
+		width: 20vw;
+		margin-left: 3vw;
 		font-size: 1.2rem;
 		font-weight: 600;
+		@include respond(sorgo) {
+			width: 50vw;
+		}
+		@include respond(espelta) {
+			width: 70vw;
+		}
 	}
 
 	&__menu-options {
@@ -32,6 +39,12 @@
 		padding: 1rem 2rem;
 		border-radius: 10rem;
 		position: relative;
+		@include respond(sorgo) {
+			width: 50vw;
+		}
+		@include respond(espelta) {
+			width: 70vw;
+		}
 	}
 
 	&__main {

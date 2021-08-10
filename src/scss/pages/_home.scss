@@ -8,6 +8,9 @@
 		justify-content: center;
 		padding-top: 10rem;
 	}
+	@include respond(arroz) {
+		padding-top: 0rem;
+	}
 	&__info {
 		display: flex;
 		flex-direction: column;
@@ -17,10 +20,16 @@
 			align-items: center;
 			text-align: center;
 		}
+		@include respond(arroz) {
+			width: 100%;
+		}
 	}
 
 	&__paragraph {
-		width: 50rem;
+		width: 60%;
+		@include respond(espelta) {
+			width: 90%;
+		}
 	}
 	&__img {
 		flex: 0 0 50%;
@@ -30,6 +39,9 @@
 		@include respond(centeno) {
 			flex: 0 0 40%;
 			width: 100%;
+		}
+		@include respond(arroz) {
+			display: none;
 		}
 	}
 
@@ -50,10 +62,6 @@
 		@include respond(trigo) {
 			width: 19rem;
 			top: 1.5rem;
-		}
-		@include respond(arroz) {
-			width: 19rem;
-			top: 3.5rem;
 		}
 	}
 }
@@ -296,9 +304,6 @@
 		top: 55rem;
 	}
 	@include respond(arroz) {
-		width: 28rem;
-		height: 28rem;
-		transform: translate(2rem, 0rem);
-		top: 60rem;
+		display: none;
 	}
 }

@@ -17,6 +17,9 @@
 		gap: 4rem;
 		height: 30rem;
 	}
+	@include respond(trigo) {
+		text-align: center;
+	}
 
 	&__box-logo {
 		grid-row: 1 / -1;
@@ -30,7 +33,7 @@
 	}
 
 	&__img {
-		height: 4rem;
+		height: clamp(3rem, 5vw, 4rem);
 	}
 
 	&__fare {
