@@ -9,9 +9,6 @@ body {
 	color: color(neutral, b);
 	position: relative;
 	overflow-x: hidden;
-	@include respond(arroz) {
-		overflow-x: visible;
-	}
 }
 
 .container-grid {

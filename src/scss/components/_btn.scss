@@ -11,9 +11,35 @@
 		border-radius: 10rem;
 		color: color(primary, a);
 		transition: all 0.4s;
+		position: relative;
+		outline: none;
+		box-shadow: none;
 	}
+
 	&:hover {
 		background-color: color(primary, a);
 		color: color(neutral, c);
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem rgba(color(neutral, a), 0.2);
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+		z-index: -1;
+	}
+
+	&:hover::after {
+		transform: scaleX(1.4) scaleY(1.6);
+		opacity: 0;
+		background-color: rgba(color(primary, a), 0.4);
 	}
 }

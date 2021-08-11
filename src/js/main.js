@@ -202,7 +202,6 @@ const menu = function () {
 	toggle.classList.toggle('toggle-close');
 	nav.classList.toggle('show');
 	listEl.classList.toggle('active');
-
 	active
 		? listEl.classList.add('transition')
 		: listEl.classList.remove('transition');
@@ -222,8 +221,14 @@ showMenu();
 const closeMenu = links => {
 	links.forEach(link => {
 		link.addEventListener('click', function () {
-			menu();
+			if (window.innerWidth <= 1090) {
+				menu();
+			} else {
+				// Para evitar que se oculten los items de la navegación
+				nav.classList.remove('show');
+			}
 		});
 	});
 };
+
 closeMenu(linkEls);
